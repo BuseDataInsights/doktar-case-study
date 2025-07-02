@@ -1,0 +1,17 @@
+# Path is inside the container image; mount anything else under /data
+# at run‑time if needed.
+data_file: data/Doktar_Topology_Sample_Data_20250627.xlsx
+feature_col: Normalized Values
+target_col: Measured VMC (%)
+test_size: 0.2
+random_state: 42
+models:
+  linear: {}
+  poly2:
+    degree: 2
+  isotonic:
+    out_of_bounds: clip
+  gbdt:
+    n_estimators: 300
+    learning_rate: 0.05
+    max_depth: 3
