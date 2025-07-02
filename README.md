@@ -43,7 +43,7 @@ q2/
 ```
 
 > **Note**  
-> The raw `images/` and `labels/` folders (train, val, test1, test2) are **not** committed because they are several GB and were annotated in CVAT.  
+> The raw `images/` and `labels/` folders (train, val, test1, test2) are **not** committed because they are several GB and were annotated in CVAT. I only included one of the images with its annotation (label) for the training set  as an example.
 > The trained model and its **annotated prediction images** can be inspected in:
 >
 > * `q2/runs/detect/blackfly_test1_zoomed`  
@@ -59,7 +59,7 @@ q2/
 
 ## Question 3 – Production Architecture
 
-`q3/blackfly_api_architecture.pdf` contains the detailed system design that explains:
+`q3/Q3 answer.pdf` contains the detailed system design that explains:
 
 * Component diagram covering Docker images, FastAPI microservices, NGINX gateway and ECS blue/green deployment.  
 * Observability, authentication, drift monitoring and CI‑CD flow.
