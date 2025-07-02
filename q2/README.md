@@ -42,9 +42,7 @@ yolov8/
 ├── blackfly.yaml          # YOLOv8 data configuration
 ├── Dockerfile             # Docker configuration
 ├── requirements.txt       # Python dependencies
-├── images/               # Training and test images
-├── labels/               # Label files
-└── runs/                 # Model outputs and results
+└── runs/detect            # Model outputs and results
 ```
 
 ## Usage
