@@ -8,9 +8,9 @@ Each question lives in its own folder so reviewers can run or inspect the parts 
 ## Directory Overview
 
 ```
-Q1/             VMC calibration task 
-Q2/             Black‑fly detection task 
-Q3/             System‑architecture answer (PDF)
+q1/             VMC calibration task 
+q2/             Black‑fly detection task 
+q3/             System‑architecture answer (PDF)
 README.md       This file
 ```
 
@@ -19,8 +19,8 @@ README.md       This file
 ## Question 1 – VMC Calibration
 
 * **Where to look**  
-  * `Q1/NOTEBOOK.ipynb` – full exploratory analysis, model comparison, validation and diagnostics with all visuals and code cells.  
-  * `Q1/Dockerfile` and Python modules reproduce the training and inference pipeline in a container.
+  * `q1/NOTEBOOK.ipynb` – full exploratory analysis, model comparison, validation and diagnostics with all visuals and code cells.  
+  * `q1/Dockerfile` and Python modules reproduce the training and inference pipeline in a container.
 
 * **Content highlights**  
   * **a. EDA & transformations** – shows the monotonic but slightly non‑linear relationship between *Measured VMC* and *Normalized_Values*.  
@@ -34,7 +34,7 @@ README.md       This file
 All code and artefacts live in `Q2/`.
 
 ```
-Q2/
+q2/
 ├─ blackfly_pipeline.py      detection + inference script
 ├─ blackfly.yaml             YOLO data config
 ├─ yolov8n.pt                base weights (YOLO‑v8 nano)
@@ -46,8 +46,8 @@ Q2/
 > The raw `images/` and `labels/` folders (train, val, test1, test2) are **not** committed because they are several GB and were annotated in CVAT.  
 > The trained model and its **annotated prediction images** can be inspected in:
 >
-> * `Q2/runs/detect/blackfly_test1_zoomed`  
-> * `Q2/runs/detect/blackfly_test2_wide_multiscale`
+> * `q2/runs/detect/blackfly_test1_zoomed`  
+> * `q2/runs/detect/blackfly_test2_wide_multiscale`
 
 ### How the model was built
 
@@ -59,7 +59,7 @@ Q2/
 
 ## Question 3 – Production Architecture
 
-`Q3/blackfly_api_architecture.pdf` contains the detailed system design that explains:
+`q3/blackfly_api_architecture.pdf` contains the detailed system design that explains:
 
 * Component diagram covering Docker images, FastAPI microservices, NGINX gateway and ECS blue/green deployment.  
 * Observability, authentication, drift monitoring and CI‑CD flow.
