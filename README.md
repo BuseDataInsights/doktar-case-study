@@ -43,8 +43,9 @@ q2/
 ```
 
 > **Note**  
-> The raw `images/` and `labels/` folders (train, val, test1, test2) are **not** committed because they are several GB and were annotated in CVAT. I only included one of the images with its annotation (label) for the training set  as an example.
-> The trained model and its **annotated prediction images** can be inspected in:
+> The raw `images/` and `labels/` folders (train, val, test1, test2) are **not** committed because they are several GB and were annotated in CVAT. I only included one of the images with its annotation (label) for the training set as an example, in the image-label example folder.
+> The model is trained by using **all** the provided train set for blackfly. All images are utilized for model training. 
+> The trained model's **annotated prediction images** can be inspected in:
 >
 > * `q2/runs/detect/blackfly_test1_zoomed`  
 > * `q2/runs/detect/blackfly_test2_wide_multiscale`
